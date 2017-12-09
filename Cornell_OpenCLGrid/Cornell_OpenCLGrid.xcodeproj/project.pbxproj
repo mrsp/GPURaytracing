@@ -1,0 +1,262 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF8287161B20F70200FB45EB /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF8287151B20F70200FB45EB /* OpenCL.framework */; };
+		AF82871D1B20F92D00FB45EB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF8287171B20F92D00FB45EB /* main.cpp */; };
+		AF82871E1B20F92D00FB45EB /* radianceGPU.cl in Sources */ = {isa = PBXBuildFile; fileRef = AF8287191B20F92D00FB45EB /* radianceGPU.cl */; };
+		AF82871F1B20F92D00FB45EB /* UniformGrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF82871B1B20F92D00FB45EB /* UniformGrid.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AF8287091B20F6D700FB45EB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AF82870B1B20F6D700FB45EB /* Cornell_OpenCLGrid */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Cornell_OpenCLGrid; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF8287151B20F70200FB45EB /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = System/Library/Frameworks/OpenCL.framework; sourceTree = SDKROOT; };
+		AF8287171B20F92D00FB45EB /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		AF8287181B20F92D00FB45EB /* primitives.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = primitives.h; sourceTree = "<group>"; };
+		AF8287191B20F92D00FB45EB /* radianceGPU.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = radianceGPU.cl; sourceTree = "<group>"; };
+		AF82871A1B20F92D00FB45EB /* scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scene.h; sourceTree = "<group>"; };
+		AF82871B1B20F92D00FB45EB /* UniformGrid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UniformGrid.cpp; sourceTree = "<group>"; };
+		AF82871C1B20F92D00FB45EB /* UniformGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UniformGrid.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF8287081B20F6D700FB45EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF8287161B20F70200FB45EB /* OpenCL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF8287021B20F6D700FB45EB = {
+			isa = PBXGroup;
+			children = (
+				AF8287151B20F70200FB45EB /* OpenCL.framework */,
+				AF82870D1B20F6D700FB45EB /* Cornell_OpenCLGrid */,
+				AF82870C1B20F6D700FB45EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AF82870C1B20F6D700FB45EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF82870B1B20F6D700FB45EB /* Cornell_OpenCLGrid */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF82870D1B20F6D700FB45EB /* Cornell_OpenCLGrid */ = {
+			isa = PBXGroup;
+			children = (
+				AF8287171B20F92D00FB45EB /* main.cpp */,
+				AF8287181B20F92D00FB45EB /* primitives.h */,
+				AF8287191B20F92D00FB45EB /* radianceGPU.cl */,
+				AF82871A1B20F92D00FB45EB /* scene.h */,
+				AF82871B1B20F92D00FB45EB /* UniformGrid.cpp */,
+				AF82871C1B20F92D00FB45EB /* UniformGrid.h */,
+			);
+			path = Cornell_OpenCLGrid;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF82870A1B20F6D700FB45EB /* Cornell_OpenCLGrid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF8287121B20F6D700FB45EB /* Build configuration list for PBXNativeTarget "Cornell_OpenCLGrid" */;
+			buildPhases = (
+				AF8287071B20F6D700FB45EB /* Sources */,
+				AF8287081B20F6D700FB45EB /* Frameworks */,
+				AF8287091B20F6D700FB45EB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cornell_OpenCLGrid;
+			productName = Cornell_OpenCLGrid;
+			productReference = AF82870B1B20F6D700FB45EB /* Cornell_OpenCLGrid */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF8287031B20F6D700FB45EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Stylianos Piperakis";
+				TargetAttributes = {
+					AF82870A1B20F6D700FB45EB = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+				};
+			};
+			buildConfigurationList = AF8287061B20F6D700FB45EB /* Build configuration list for PBXProject "Cornell_OpenCLGrid" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AF8287021B20F6D700FB45EB;
+			productRefGroup = AF82870C1B20F6D700FB45EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF82870A1B20F6D700FB45EB /* Cornell_OpenCLGrid */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF8287071B20F6D700FB45EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF82871E1B20F92D00FB45EB /* radianceGPU.cl in Sources */,
+				AF82871D1B20F92D00FB45EB /* main.cpp in Sources */,
+				AF82871F1B20F92D00FB45EB /* UniformGrid.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AF8287101B20F6D700FB45EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AF8287111B20F6D700FB45EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AF8287131B20F6D700FB45EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-Wl,-stack_size,0x10000000";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AF8287141B20F6D700FB45EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-Wl,-stack_size,0x10000000";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF8287061B20F6D700FB45EB /* Build configuration list for PBXProject "Cornell_OpenCLGrid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF8287101B20F6D700FB45EB /* Debug */,
+				AF8287111B20F6D700FB45EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF8287121B20F6D700FB45EB /* Build configuration list for PBXNativeTarget "Cornell_OpenCLGrid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF8287131B20F6D700FB45EB /* Debug */,
+				AF8287141B20F6D700FB45EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF8287031B20F6D700FB45EB /* Project object */;
+}
